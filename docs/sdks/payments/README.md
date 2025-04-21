@@ -65,7 +65,7 @@ with Pay(
     api_key_auth=os.getenv("PAY_API_KEY_AUTH", ""),
 ) as pay:
 
-    res = pay.payments.collect(amount=433642, phone_number="824.805.0012 x8298")
+    res = pay.payments.collect(amount=433642, phone_number="237650000000")
 
     # Handle response
     print(res)
@@ -74,11 +74,11 @@ with Pay(
 
 ### Parameters
 
-| Parameter                                                           | Type                                                                | Required                                                            | Description                                                         |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `amount`                                                            | *int*                                                               | :heavy_check_mark:                                                  | N/A                                                                 |
-| `phone_number`                                                      | *str*                                                               | :heavy_check_mark:                                                  | N/A                                                                 |
-| `retries`                                                           | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)    | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
+| Parameter                                                           | Type                                                                | Required                                                            | Description                                                         | Example                                                             |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `amount`                                                            | *int*                                                               | :heavy_check_mark:                                                  | N/A                                                                 |                                                                     |
+| `phone_number`                                                      | *str*                                                               | :heavy_check_mark:                                                  | N/A                                                                 | 237650000000                                                        |
+| `retries`                                                           | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)    | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |                                                                     |
 
 ### Response
 
@@ -107,7 +107,7 @@ with Pay(
     api_key_auth=os.getenv("PAY_API_KEY_AUTH", ""),
 ) as pay:
 
-    res = pay.payments.disburse(amount=410119, phone_number="923.242.7389 x02568")
+    res = pay.payments.disburse(amount=410119, phone_number="237650000000")
 
     # Handle response
     print(res)
@@ -116,11 +116,11 @@ with Pay(
 
 ### Parameters
 
-| Parameter                                                           | Type                                                                | Required                                                            | Description                                                         |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| `amount`                                                            | *int*                                                               | :heavy_check_mark:                                                  | N/A                                                                 |
-| `phone_number`                                                      | *str*                                                               | :heavy_check_mark:                                                  | N/A                                                                 |
-| `retries`                                                           | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)    | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |
+| Parameter                                                           | Type                                                                | Required                                                            | Description                                                         | Example                                                             |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `amount`                                                            | *int*                                                               | :heavy_check_mark:                                                  | N/A                                                                 |                                                                     |
+| `phone_number`                                                      | *str*                                                               | :heavy_check_mark:                                                  | N/A                                                                 | 237650000000                                                        |
+| `retries`                                                           | [Optional[utils.RetryConfig]](../../models/utils/retryconfig.md)    | :heavy_minus_sign:                                                  | Configuration to override the default retry behavior of the client. |                                                                     |
 
 ### Response
 
