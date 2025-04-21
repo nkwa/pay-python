@@ -1,0 +1,147 @@
+lockVersion: 2.0.0
+id: be8f7905-4c5b-4c82-ab92-2744c8aac288
+management:
+  docChecksum: 63539c4dc9e22bdc56ac167366bf6be3
+  docVersion: 1.0.0
+  speakeasyVersion: 1.535.1
+  generationVersion: 2.585.2
+  releaseVersion: 0.1.2
+  configChecksum: 37b260a40ada260f844db796e252c379
+  published: true
+features:
+  python:
+    additionalDependencies: 1.0.0
+    core: 5.14.0
+    defaultEnabledRetries: 0.2.0
+    devContainers: 3.0.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.3.2
+    flatRequests: 1.0.1
+    flattening: 3.1.1
+    globalSecurity: 3.0.3
+    globalSecurityCallbacks: 1.0.0
+    globalSecurityFlattening: 1.0.0
+    globalServerURLs: 3.1.0
+    groups: 3.0.0
+    methodArguments: 1.0.2
+    nameOverrides: 3.0.1
+    responseFormat: 1.0.1
+    retries: 3.0.2
+    sdkHooks: 1.0.1
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .python-version
+  - .vscode/settings.json
+  - USAGE.md
+  - docs/models/availability.md
+  - docs/models/getpaymentsidrequest.md
+  - docs/models/httperror.md
+  - docs/models/operation.md
+  - docs/models/operator.md
+  - docs/models/payment.md
+  - docs/models/paymentrequest.md
+  - docs/models/paymentstatus.md
+  - docs/models/paymenttype.md
+  - docs/models/security.md
+  - docs/models/status.md
+  - docs/models/telecomoperator.md
+  - docs/models/type.md
+  - docs/models/utils/retryconfig.md
+  - docs/sdks/pay/README.md
+  - docs/sdks/payments/README.md
+  - docs/sdks/service/README.md
+  - poetry.toml
+  - py.typed
+  - pylintrc
+  - pyproject.toml
+  - scripts/prepare_readme.py
+  - scripts/publish.sh
+  - src/nkwa_pay_sdk/__init__.py
+  - src/nkwa_pay_sdk/_hooks/__init__.py
+  - src/nkwa_pay_sdk/_hooks/sdkhooks.py
+  - src/nkwa_pay_sdk/_hooks/types.py
+  - src/nkwa_pay_sdk/_version.py
+  - src/nkwa_pay_sdk/basesdk.py
+  - src/nkwa_pay_sdk/httpclient.py
+  - src/nkwa_pay_sdk/models/__init__.py
+  - src/nkwa_pay_sdk/models/apierror.py
+  - src/nkwa_pay_sdk/models/availability.py
+  - src/nkwa_pay_sdk/models/get_payments_id_op.py
+  - src/nkwa_pay_sdk/models/httperror.py
+  - src/nkwa_pay_sdk/models/payment.py
+  - src/nkwa_pay_sdk/models/paymentrequest.py
+  - src/nkwa_pay_sdk/models/paymentstatus.py
+  - src/nkwa_pay_sdk/models/paymenttype.py
+  - src/nkwa_pay_sdk/models/security.py
+  - src/nkwa_pay_sdk/models/telecomoperator.py
+  - src/nkwa_pay_sdk/payments.py
+  - src/nkwa_pay_sdk/py.typed
+  - src/nkwa_pay_sdk/sdk.py
+  - src/nkwa_pay_sdk/sdkconfiguration.py
+  - src/nkwa_pay_sdk/service.py
+  - src/nkwa_pay_sdk/types/__init__.py
+  - src/nkwa_pay_sdk/types/basemodel.py
+  - src/nkwa_pay_sdk/utils/__init__.py
+  - src/nkwa_pay_sdk/utils/annotations.py
+  - src/nkwa_pay_sdk/utils/enums.py
+  - src/nkwa_pay_sdk/utils/eventstreaming.py
+  - src/nkwa_pay_sdk/utils/forms.py
+  - src/nkwa_pay_sdk/utils/headers.py
+  - src/nkwa_pay_sdk/utils/logger.py
+  - src/nkwa_pay_sdk/utils/metadata.py
+  - src/nkwa_pay_sdk/utils/queryparams.py
+  - src/nkwa_pay_sdk/utils/requestbodies.py
+  - src/nkwa_pay_sdk/utils/retries.py
+  - src/nkwa_pay_sdk/utils/security.py
+  - src/nkwa_pay_sdk/utils/serializers.py
+  - src/nkwa_pay_sdk/utils/url.py
+  - src/nkwa_pay_sdk/utils/values.py
+examples:
+  get_/payments/{id}:
+    speakeasy-default-get-/payments/{id}:
+      parameters:
+        path:
+          id: "96e9ed79-9fef-44a6-9435-0625338ca86a"
+      responses:
+        "200":
+          application/json: {}
+        "401":
+          application/json: {}
+        "500":
+          application/json: {}
+  post_/collect:
+    speakeasy-default-post-/collect:
+      requestBody:
+        application/json: {"amount": 433642, "phoneNumber": "824.805.0012 x8298"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+  post_/disburse:
+    speakeasy-default-post-/disburse:
+      requestBody:
+        application/json: {"amount": 410119, "phoneNumber": "923.242.7389 x02568"}
+      responses:
+        "201":
+          application/json: {}
+        "400":
+          application/json: {}
+        "500":
+          application/json: {}
+  get_/availability:
+    speakeasy-default-get-/availability:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+        "401":
+          application/json: {}
+        "500":
+          application/json: {}
+examplesVersion: 1.0.1
+generatedTests: {}

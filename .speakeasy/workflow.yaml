@@ -1,0 +1,23 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Nkwa Pay API:
+        inputs:
+            - location: /Users/ebaneck/Downloads/nkwa-pay-openapi.json
+        overlays:
+            - location: .speakeasy/speakeasy-modifications-overlay.yaml
+        registry:
+            location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api
+targets:
+    pay:
+        target: python
+        source: Nkwa Pay API
+        publish:
+            pypi:
+                token: $pypi_token
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api-python-code-samples
+            labelOverride:
+                fixedValue: Python (SDK)
+            blocking: false

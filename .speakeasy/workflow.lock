@@ -1,0 +1,41 @@
+speakeasyVersion: 1.535.1
+sources:
+    Nkwa Pay API:
+        sourceNamespace: nkwa-pay-api
+        sourceRevisionDigest: sha256:2a57cde59d52f4f244fcc95a140d90ab8f8048523c522c40d5f3b21016f56f92
+        sourceBlobDigest: sha256:1f2f8d128837664b6a98f73da82649b3059fce2693f2e69005f0db2e250c0085
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    pay:
+        source: Nkwa Pay API
+        sourceNamespace: nkwa-pay-api
+        sourceRevisionDigest: sha256:2a57cde59d52f4f244fcc95a140d90ab8f8048523c522c40d5f3b21016f56f92
+        sourceBlobDigest: sha256:1f2f8d128837664b6a98f73da82649b3059fce2693f2e69005f0db2e250c0085
+        codeSamplesNamespace: nkwa-pay-api-python-code-samples
+        codeSamplesRevisionDigest: sha256:71afb61ec86b0e4f434089c31f9b4bf0004c1093ba4b2bb435b29b5e449d2eec
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Nkwa Pay API:
+            inputs:
+                - location: /Users/ebaneck/Downloads/nkwa-pay-openapi.json
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api
+    targets:
+        pay:
+            target: python
+            source: Nkwa Pay API
+            publish:
+                pypi:
+                    token: $pypi_token
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/nkwa/pay/nkwa-pay-api-python-code-samples
+                labelOverride:
+                    fixedValue: Python (SDK)
+                blocking: false
