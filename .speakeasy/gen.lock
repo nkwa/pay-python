@@ -1,17 +1,19 @@
 lockVersion: 2.0.0
 id: be8f7905-4c5b-4c82-ab92-2744c8aac288
 management:
-  docChecksum: 895fe4c97bd2d9a293c6bd9bcde27924
+  docChecksum: 75e5d8fe2ba1a93b23287c6beabd23cc
   docVersion: 1.0.0
-  speakeasyVersion: 1.540.0
-  generationVersion: 2.593.3
-  releaseVersion: 0.2.0
-  configChecksum: ba4302af41a134091e80bf97b9086fcf
+  speakeasyVersion: 1.542.1
+  generationVersion: 2.597.9
+  releaseVersion: 0.3.0
+  configChecksum: a7cff23f7c701270b8f2790be3a14792
+  repoURL: https://github.com/nkwa/pay-python.git
+  installationURL: https://github.com/nkwa/pay-python.git
   published: true
 features:
   python:
     additionalDependencies: 1.0.0
-    core: 5.16.0
+    core: 5.17.0
     defaultEnabledRetries: 0.2.0
     devContainers: 3.0.0
     enumUnions: 0.1.0
