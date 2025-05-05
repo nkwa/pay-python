@@ -297,7 +297,7 @@ import os
 
 
 with Pay(
-    server_url="https://api.staging.nkwapay.mynkwa.com",
+    server_url="https://api.pay.staging.mynkwa.com",
     api_key_auth=os.getenv("PAY_API_KEY_AUTH", ""),
 ) as pay:
 

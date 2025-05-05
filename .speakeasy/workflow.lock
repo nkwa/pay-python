@@ -1,20 +1,21 @@
-speakeasyVersion: 1.540.0
+speakeasyVersion: 1.542.1
 sources:
     Nkwa Pay API:
         sourceNamespace: nkwa-pay-api
-        sourceRevisionDigest: sha256:fbc65b7c39358b3ddacd3657bde10b4a5e7c20646293302b8d5c1a7b6bc90acc
-        sourceBlobDigest: sha256:506af0afee6b44c538f268fba97fc5fdca017424db7ff2f2ff85289a3d826ab3
+        sourceRevisionDigest: sha256:b3b71ff17ecda103cbf24a8f1f010b24246da18cc6c910de18556b87b56f33ce
+        sourceBlobDigest: sha256:430e72a4e27ad9082098d60324b77422e9f4f5229383ef1facec1c504e9909a5
         tags:
             - latest
+            - speakeasy-sdk-regen-1746423393
             - 1.0.0
 targets:
     pay:
         source: Nkwa Pay API
         sourceNamespace: nkwa-pay-api
-        sourceRevisionDigest: sha256:fbc65b7c39358b3ddacd3657bde10b4a5e7c20646293302b8d5c1a7b6bc90acc
-        sourceBlobDigest: sha256:506af0afee6b44c538f268fba97fc5fdca017424db7ff2f2ff85289a3d826ab3
+        sourceRevisionDigest: sha256:b3b71ff17ecda103cbf24a8f1f010b24246da18cc6c910de18556b87b56f33ce
+        sourceBlobDigest: sha256:430e72a4e27ad9082098d60324b77422e9f4f5229383ef1facec1c504e9909a5
         codeSamplesNamespace: nkwa-pay-api-python-code-samples
-        codeSamplesRevisionDigest: sha256:62c43b337be8756dfdea75b7cce086ff53cf8f7b45b76e86c7aacc47b76c54d8
+        codeSamplesRevisionDigest: sha256:e291a9a994b49f94ab09d47c18f613711fdcffaa9ad1fafad9bc0e84a2f72e75
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
